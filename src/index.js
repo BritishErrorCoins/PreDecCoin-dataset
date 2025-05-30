@@ -1,8 +1,11 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import App from './App';
-import './index.css';
+import './index.css'; // optional, if you use styles
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
-root.render(<App />);
-// TODO: Implement index.js
+root.render(
+  <React.StrictMode>
+    <App />
+  </React.StrictMode>
+);
